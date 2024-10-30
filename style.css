@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Figtree;
+}
+
+.container {
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+
+}
+
+.logo .l {
+    width: 36px;
+    height: 35px;
+}
+
+.left-bar {
+    display: flex;
+    width: 100px;
+    padding: 30px 15px;
+    flex-direction: column;
+    align-items: center;
+    gap: 55px;
+    align-self: stretch;
+}
+
+.logout a,
+.icons a {
+    text-decoration: none;
+}
+
+.logout a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 0 0;
+    align-self: stretch;
+    color: #000;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.icons {
+    min-height: 300px;
+    position: sticky;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+}
+
+.icons a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 0 0;
+    align-self: stretch;
+    color: #000;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    gap: 4px;
+    padding: 10px 10px;
+
+}
+
+.left-bar .active {
+    border-radius: 16px;
+    background: #965E47;
+    color: #fff !important;
+}
+
+.content {
+    width: 820px;
+    height: 100vh;
+    background: #F8F8F8;
+    display: flex;
+    padding: 30px 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 21px;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+.content>h1,
+.Catégories h1 {
+    color: #000;
+    font-family: Figtree;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.Catégories {
+    display: flex;
+    padding-bottom: 20px;
+    align-items: flex-start;
+    gap: 15px;
+    align-self: stretch;
+}
+
+.cat a {
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    padding: 14px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 40px;
+    background: #FFF;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.02);
+}
+
+.cat3 a {
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    padding: 14px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 40px;
+    border: 2px solid #000;
+    background: #FFF;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.02);
+}
+
+.sections {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    align-self: stretch;
+}
+
+section {
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    align-self: stretch;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.02);
+}
+
+.head {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    align-self: stretch;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    flex: 1 0 0;
+    width: 177px;
+}
+
+.info .Produit {
+    color: #000;
+    font-family: Figtree;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+}
+
+.info .prix {
+    color: #000;
+    font-family: Figtree;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.info .dh {
+    color: #000;
+    font-family: Figtree;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.conter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+}
+
+.conter h1 {
+    color: #000;
+    font-family: Figtree;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.Tailles {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 10px;
+    align-self: stretch;
+    flex-wrap: wrap;
+}
+
+.Tailles .Taille {
+    display: flex;
+    height: 30px;
+    min-width: 40px;
+    padding: 0px 12px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex: 1 0 0;
+    border-radius: 60px;
+    background: #F2F2F2;
+    color: #000;
+    font-family: Figtree;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.Tailles .active {
+    display: flex;
+    height: 30px;
+    min-width: 40px;
+    padding: 0px 12px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex: 1 0 0;
+    border-radius: 60px;
+    border: 2px solid #000;
+    color: #000;
+    font-family: Figtree;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    cursor: pointer;
+}
