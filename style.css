@@ -13,6 +13,7 @@ body {
 
 .container {
     display: flex;
+    height: 100vh;
 }
 
 .logo {
@@ -34,6 +35,7 @@ body {
     align-items: center;
     gap: 55px;
     align-self: stretch;
+    position: sticky;
 }
 
 .logout a,
@@ -88,7 +90,7 @@ body {
 
 .content {
     width: 820px;
-    height: 100vh;
+    min-height: 100vh;
     background: #F8F8F8;
     display: flex;
     padding: 30px 40px;
@@ -97,6 +99,7 @@ body {
     gap: 21px;
     flex: 1 0 0;
     align-self: stretch;
+
 }
 
 .content>h1,
@@ -149,9 +152,12 @@ body {
     align-items: flex-start;
     gap: 30px;
     align-self: stretch;
+    flex-wrap: wrap;
+
 }
 
 section {
+    max-width: 361px;
     display: flex;
     padding: 24px;
     flex-direction: column;
@@ -234,7 +240,7 @@ section {
     flex-wrap: wrap;
 }
 
-.Tailles .Taille {
+.Tailles div {
     display: flex;
     height: 30px;
     min-width: 40px;
@@ -256,22 +262,100 @@ section {
 }
 
 .Tailles .active {
+    border-radius: 60px;
+    border: 2px solid #000;
+}
+
+.conter2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+}
+
+.Couleurs {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 10px;
+    align-self: stretch;
+    flex-wrap: wrap;
+}
+
+.couleur {
     display: flex;
     height: 30px;
-    min-width: 40px;
-    padding: 0px 12px;
-    flex-direction: column;
+    padding: 0px 12px 0px 7px;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    flex: 1 0 0;
-    border-radius: 60px;
+    border-radius: 40px;
+    background: #F2F2F2;
+}
+
+.active {
+    border-radius: 40px;
     border: 2px solid #000;
-    color: #000;
+}
+
+.couleur div {
+    width: 18px;
+    height: 18px;
+    border-radius: 40px;
+}
+
+.n {
+    background: #000;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+}
+
+.b {
+    border-radius: 40px;
+    background: #FFF;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+}
+
+.bl {
+    border-radius: 40px;
+    background: #0D0072;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+}
+
+.m {
+    border-radius: 40px;
+    background: #965E47;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+}
+
+.v {
+    border-radius: 40px;
+    background: #007F1B;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+}
+
+.khat {
+    width: 313px;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.20);
+}
+
+section button {
+    display: flex;
+    padding: 14px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 12px;
+    background: #965E47;
+    color: #FFF;
     font-family: Figtree;
-    font-size: 14px;
+    font-size: 16px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 700;
     line-height: normal;
+    border: none;
     cursor: pointer;
 }
