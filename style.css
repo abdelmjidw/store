@@ -148,6 +148,7 @@ header .active {
 .sections {
     display: flex;
     align-items: flex-start;
+    flex: 1 1 auto;
     gap: 30px;
     align-self: stretch;
     flex-wrap: wrap;
@@ -368,7 +369,7 @@ section button {
     padding: 30px 40px;
     flex-direction: column;
     align-items: flex-start;
-    gap: 20px;
+    gap: 10px;
     align-self: stretch;
     background-color: #fff;
 }
@@ -387,7 +388,7 @@ section button {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 20px;
+    gap: 10px;
     align-self: stretch;
 }
 
@@ -495,14 +496,27 @@ hr {
     font-weight: 700;
     line-height: 100%;
     text-decoration: line-through;
+
+}
+
+.taman {
+    display: flex;
+    align-items: end;
+    color: #000;
+    text-align: right;
+    font-family: Figtree;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    text-decoration: line-through;
     opacity: 0.4;
 }
 
-h6 b {
-    opacity: 0.4;
+.taman b {
     color: #000;
     font-family: Figtree;
-    font-size: 12px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 700;
     line-height: 100%;
@@ -523,17 +537,17 @@ h5 {
 h5 b {
     color: #000;
     font-family: Figtree;
-    font-size: 12px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 700;
     line-height: 100%;
 }
 
-.input {
+.inputs {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    position: relative;
 }
 
 input {
@@ -555,7 +569,7 @@ input {
 
 .Esp {
     position: relative;
-    top: 19px;
+    top: 8px;
     left: 20px;
     text-align: center;
     background-color: #fff;
@@ -568,17 +582,76 @@ input {
     line-height: normal;
 }
 
+.inputs::after {
+    content: '23.00';
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 87px;
+    height: 45px;
+    border-radius: 11px;
+    background: #F2F2F2;
+    right: 1px;
+    top: 18px;
+}
+
 .Réduction {
     position: relative;
-    top: 19px;
+    top: 8px;
     left: 20px;
     text-align: center;
     background-color: #fff;
-    width: 54px;
+    width: 71px;
     color: #AAA;
     font-family: Figtree;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
+    line-height: normal;
+}
+
+.end {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+}
+
+.end div {
+    display: flex;
+    padding: 10px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    flex: 1 0 0;
+    height: 70px;
+}
+
+.end div:nth-child(1) {
+    border-radius: 16px;
+    border: 2px solid #000;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.02);
+}
+
+.end div:nth-child(2) {
+    border-radius: 16px;
+    background: #F2F2F2;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.02);
+}
+
+.end div:nth-child(3) {
+    border-radius: 16px;
+    background: var(--Primary-color, #965E47);
+    color: #FFF;
+    font-family: Figtree;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
     line-height: normal;
 }
