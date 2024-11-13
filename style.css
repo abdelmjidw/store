@@ -163,7 +163,7 @@ header .active {
     align-items: flex-start;
     gap: 30px;
     align-self: stretch;
-    flex-wrap: nowrap;
+   
 
 }
 
@@ -680,10 +680,15 @@ input {
     line-height: normal;
 }
 
-@media (max-width:768px) {
+@media (max-width:905px) {
     .left-bar {
         width: 60px;
+        height: 100vh;
         padding: 10px 5px;
+        
+    }
+    .left-bar div{
+        width: 100%;
     }
 
     .content {
@@ -692,9 +697,9 @@ input {
 
     .section1, .section2 {
         max-width: 100%;
-        flex-direction: column;
-    }
 
+
+    }
     section {
         width: 100%;
         padding: 15px;
